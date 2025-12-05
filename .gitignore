@@ -14,7 +14,7 @@ moc_*.cpp
 ui_*.h
 qrc_*.cpp
 *.moc
-Makefile*
+
 
 # Base de datos
 *.db
