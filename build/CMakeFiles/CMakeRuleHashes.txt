@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+2cf7055f63b0258ee9afbb2eac37741e CMakeFiles/HealthTracker_autogen
+2cf7055f63b0258ee9afbb2eac37741e CMakeFiles/HealthTracker_autogen_timestamp_deps
+132a1489b7c1cf73595fb740aad97b3c HealthTracker_autogen/timestamp

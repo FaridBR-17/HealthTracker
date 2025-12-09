@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Bienvenida -->
+    <item>
+      <widget class="QLabel" name="welcomeLabel">
+        <property name="text">
+          <string>Bienvenido</string>
+        </property>
+      </widget>
+    </item>
+
+    <!-- Selección de usuario para admin -->
+    <item>
+      <widget class="QComboBox" name="userSelector"/>
+    </item>
+
+    <!-- Lista de registros -->
+    <item>
+      <widget class="QListWidget" name="listWidget"/>
+    </item>
+
+    <!-- Formulario de ingreso -->
+    <item>
+      <layout class="QFormLayout">
+        <item row="0" column="0"><widget class="QLabel"><property name="text"><string>Peso</string></property></widget></item>
+        <item row="0" column="1"><widget class="QLineEdit" name="txtWeight"/></item>
+
+        <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Sistólica</string></property></widget></item>
+        <item row="1" column="1"><widget class="QLineEdit" name="txtSys"/></item>
+
+        <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Diastólica</string></property></widget></item>
+        <item row="2" column="1"><widget class="QLineEdit" name="txtDia"/></item>
+
+        <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Glucosa</string></property></widget></item>
+        <item row="3" column="1"><widget class="QLineEdit" name="txtGlucose"/></item>
+      </layout>
+    </item>
+
+    <!-- Botones -->
+    <item>
+      <layout class="QHBoxLayout">
+        <item>
+          <widget class="QPushButton" name="btnAdd">
+            <property name="text"><string>Agregar</string></property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="btnAnalysis">
+            <property name="text"><string>Analizar</string></property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="btnExport">
+            <property name="text"><string>Exportar CSV</string></property>
+          </widget>
+        </item>
+      </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

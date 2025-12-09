@@ -1,0 +1,5 @@
+/home/farid/HealthTracker/build/CMakeFiles/HealthTracker.dir
+/home/farid/HealthTracker/build/CMakeFiles/edit_cache.dir
+/home/farid/HealthTracker/build/CMakeFiles/rebuild_cache.dir
+/home/farid/HealthTracker/build/CMakeFiles/HealthTracker_autogen_timestamp_deps.dir
+/home/farid/HealthTracker/build/CMakeFiles/HealthTracker_autogen.dir

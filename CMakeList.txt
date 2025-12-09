@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.10)
+project(HealthTracker)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+find_package(Qt5 COMPONENTS Widgets Sql REQUIRED)
+
+add_executable(HealthTracker
+    main.cpp
+    User.cpp
+    User.h
+    DatabaseManager.cpp
+    DatabaseManager.h
+    LoginWindow.cpp
+    LoginWindow.h
+    RegisterWindow.cpp
+    RegisterWindow.h
+    MainWindow.cpp
+    MainWindow.h
+
+    # Los archivos .ui SE DECLARAN AQUÍ
+    LoginWindow.ui
+    RegisterWindow.ui
+    MainWindow.ui
+)
+
+target_link_libraries(HealthTracker Qt5::Widgets Qt5::Sql)
