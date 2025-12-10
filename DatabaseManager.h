@@ -15,13 +15,13 @@ public:
     bool registerUser(const QString& username, const QString& password);
     bool validateUser(const QString& username, const QString& password);
 
-    // Health records
+    
     bool addHealthRecord(int userId, double weight, int sys, int dia, double glucose);
     QVector<HealthRecord> getRecordsForUserId(int userId);
 
-    // Helpers for admin view
+    
     QStringList getAllUsernames();
-    int getUserId(const QString &username); // -1 if not found
+    int getUserId(const QString &username); 
 
 private:
     DatabaseManager();
