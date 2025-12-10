@@ -5,7 +5,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout">
 
-    <!-- Bienvenida -->
+    
     <item>
       <widget class="QLabel" name="welcomeLabel">
         <property name="text">
@@ -14,17 +14,16 @@
       </widget>
     </item>
 
-    <!-- Selección de usuario para admin -->
     <item>
       <widget class="QComboBox" name="userSelector"/>
     </item>
 
-    <!-- Lista de registros -->
+    
     <item>
       <widget class="QListWidget" name="listWidget"/>
     </item>
 
-    <!-- Formulario de ingreso -->
+    
     <item>
       <layout class="QFormLayout">
         <item row="0" column="0"><widget class="QLabel"><property name="text"><string>Peso</string></property></widget></item>
@@ -41,7 +40,7 @@
       </layout>
     </item>
 
-    <!-- Botones -->
+    
     <item>
       <layout class="QHBoxLayout">
         <item>
