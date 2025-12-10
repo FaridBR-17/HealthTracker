@@ -16,13 +16,13 @@ MainWindow::MainWindow(const QString& username, QWidget *parent)
 
     setWindowTitle("Bienvenido " + username);
 
-    // ¿Es admin?
+    
     isAdmin = (username == "admin");
 
-    // Obtener ID
+    
     currentUserId = DatabaseManager::instance().getUserId(username);
 
-    // Si es admin llenamos la lista de usuarios
+    
     if (isAdmin) {
         loadUsersForAdmin();
         connect(ui->userSelector, &QComboBox::currentTextChanged,
@@ -31,10 +31,10 @@ MainWindow::MainWindow(const QString& username, QWidget *parent)
         ui->userSelector->setVisible(false);
     }
 
-    // Cargar registros del usuario actual
+    
     loadRecords();
 
-    // Conectar botones
+    
     connect(ui->btnAdd, &QPushButton::clicked, this, &MainWindow::onAddRecord);
     connect(ui->btnAnalysis, &QPushButton::clicked, this, &MainWindow::onShowAnalysis);
     connect(ui->btnExport, &QPushButton::clicked, this, &MainWindow::onExportCSV);
@@ -49,7 +49,7 @@ void MainWindow::loadUsersForAdmin() {
     ui->userSelector->clear();
     ui->userSelector->addItems(users);
 
-    // Seleccionar admin al inicio
+    
     ui->userSelector->setCurrentText("admin");
 }
 
