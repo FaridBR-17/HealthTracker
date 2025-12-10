@@ -21,12 +21,11 @@ private slots:
     void onShowAnalysis();
     void onExportCSV();
 
-    // NUEVO → para cambiar la vista cuando el admin elige un usuario
     void onUserChanged();
 
 private:
     void loadRecords();
-    void loadUsersForAdmin();   // NUEVO → cargar lista de usuarios si es admin
+    void loadUsersForAdmin();   
 
 private:
     Ui::MainWindow *ui;
@@ -35,7 +34,7 @@ private:
 
     QVector<HealthRecord> records;
 
-    bool isAdmin = false;       // NUEVO → marcar si es admin
+    bool isAdmin = false;       
 };
 
 #endif
