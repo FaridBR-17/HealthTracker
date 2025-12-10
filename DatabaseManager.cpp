@@ -48,7 +48,7 @@ bool DatabaseManager::createTables() {
         return false;
     }
 
-    // crear admin si no existe
+    
     QSqlQuery check;
     check.prepare("SELECT id FROM users WHERE username = 'admin'");
     check.exec();
