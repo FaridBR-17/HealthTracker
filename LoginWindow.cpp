@@ -38,7 +38,7 @@ void LoginWindow::attemptLogin() {
 
     if (DatabaseManager::instance().validateUser(user, pass)) {
 
-        // 👉 Abrimos MainWindow enviando el usuario
+        
         MainWindow* main = new MainWindow(user);
         main->show();
 
