@@ -3,14 +3,14 @@ project(HealthTracker)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Activa AUTOMOC, AUTOUIC y AUTORCC
+
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt5 COMPONENTS Core Widgets Sql REQUIRED)
 
-# Archivos fuente .cpp
+
 set(SOURCES
     main.cpp
     User.cpp
@@ -23,7 +23,7 @@ set(SOURCES
     CSVExporter.cpp
 )
 
-# Archivos .h
+
 set(HEADERS
     User.h
     DatabaseManager.h
@@ -35,21 +35,21 @@ set(HEADERS
     CSVExporter.h
 )
 
-# Archivos .ui
+
 set(UI_FILES
     LoginWindow.ui
     RegisterWindow.ui
     MainWindow.ui
 )
 
-# Ejecutable
+
 add_executable(HealthTracker
     ${SOURCES}
     ${HEADERS}
     ${UI_FILES}
 )
 
-# Linkeo con Qt5
+
 target_link_libraries(HealthTracker
     Qt5::Core
     Qt5::Widgets
